@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abogada Ailen Ramirez | Estudio Jurídico Previsional</title>
+    <meta name="description" content="Asesoramiento legal y trámites de jubilaciones, pensiones, reajustes de haberes y jubilación por invalidez en Florencio Varela.">
+    <link rel="canonical" href="https://dra-ailenramirez.com.ar">
+    
+    <!-- Google Fonts: Cormorant Garamond for headings and Inter for body text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2b/TfTfTfK5yV5oV6vPz8e+G6q6f9hQ/zWw5C5g2A/Q/O4a+eH4b6wL+A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer base {
+            html {
+                font-family: 'Inter', sans-serif;
+            }
+            h1, h2, h3 {
+                font-family: 'Cormorant Garamond', serif;
+            }
+        }
+        @layer components {
+            .nav-link {
+                @apply relative pb-1 transition-colors duration-300 before:absolute before:bottom-0 before:left-0 before:w-0 before:h-0.5 before:bg-amber-800 before:transition-all before:duration-300 hover:before:w-full;
+            }
+        }
+    </style>
+    <!-- Tailwind CSS Custom Colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-gold': '#A38B5E',
+                        'brand-beige': '#F5F5DC',
+                        'brand-black': '#1E1E1E',
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-brand-beige text-brand-black">
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/5491124092349" class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-transform duration-300 transform hover:scale-110" target="_blank" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
+
+    <!-- Navigation Header -->
+    <header class="fixed top-0 left-0 right-0 z-40 bg-white/90 backdrop-blur-sm shadow-md py-4 transition-all duration-300">
+        <nav class="container mx-auto px-4 md:px-6 flex items-center justify-between">
+            <!-- Logo Section -->
+            <div class="flex items-center space-x-2">
+                <img src="logoaillen.jpg" alt="Dra. Ailen Ramirez Abogados" class="h-20 md:h-24">
+            </div>
+
+            <!-- Navigation Links -->
+            <ul class="flex space-x-6 lg:space-x-10 text-lg font-medium text-brand-black">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                <li><a href="#ubicacion" class="nav-link">Ubicación</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="pt-24">
+        <!-- Hero Section -->
+        <section id="inicio" class="container mx-auto px-4 md:px-6 py-12 md:py-24 text-center">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-brand-black mb-4 animate-fade-in-down">
+                Dra. Ailen Ramirez
+            </h1>
+            <p class="text-lg md:text-xl text-gray-700 max-w-2xl mx-auto mb-8 animate-fade-in">
+                Abogada especialista en Derecho Previsional. Te acompañamos en cada paso para asegurar tus derechos.
+            </p>
+            <a href="#contacto" class="inline-block bg-brand-gold text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-amber-800 transition-colors duration-300 transform hover:scale-105">
+                Consultá sin cargo
+            </a>
+        </section>
+
+        <!-- Services Section -->
+        <section id="servicios" class="bg-white py-12 md:py-24">
+            <div class="container mx-auto px-4 md:px-6">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-brand-black mb-12">
+                    Nuestros Servicios
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service 1: Jubilaciones y Pensiones -->
+                    <div class="bg-brand-beige p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 text-center">
+                        <i class="fas fa-hand-holding-usd text-brand-gold text-5xl mb-4"></i>
+                        <h3 class="text-2xl font-bold text-brand-black mb-2">Jubilaciones y Pensiones</h3>
+                        <p class="text-gray-700">Asesoramiento integral y tramitación de jubilaciones ordinarias, jubilaciones por moratoria, pensiones directas y derivadas ante ANSES e IPS.</p>
+                    </div>
+                    <!-- Service 2: Jubilación por Invalidez -->
+                    <div class="bg-brand-beige p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 text-center">
+                        <i class="fas fa-wheelchair text-brand-gold text-5xl mb-4"></i>
+                        <h3 class="text-2xl font-bold text-brand-black mb-2">Jubilación por Invalidez</h3>
+                        <p class="text-gray-700">Tramitación completa de la jubilación por invalidez, asegurando la presentación correcta de la documentación y el seguimiento del expediente.</p>
+                    </div>
+                    <!-- Service 3: Reajustes de Haberes -->
+                    <div class="bg-brand-beige p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 text-center">
+                        <i class="fas fa-balance-scale text-brand-gold text-5xl mb-4"></i>
+                        <h3 class="text-2xl font-bold text-brand-black mb-2">Reajustes de Haberes</h3>
+                        <p class="text-gray-700">Defensa de tus derechos a través de reclamos y juicios para obtener el reajuste de haberes jubilatorios y pensiones.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contacto" class="container mx-auto px-4 md:px-6 py-12 md:py-24">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-12">
+                <!-- Contact Details -->
+                <div class="w-full lg:w-1/2">
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-brand-black mb-8">
+                        Contacto
+                    </h2>
+                    <p class="text-lg text-gray-700 mb-6">
+                        Si tenés alguna consulta o necesitás asesoramiento, no dudes en contactarnos.
+                    </p>
+                    <ul class="space-y-4 text-lg">
+                        <li class="flex items-center space-x-4">
+                            <i class="fas fa-map-marker-alt text-brand-gold text-2xl"></i>
+                            <span class="text-gray-700">Avenida General José de San Martin 1586, Florencio Varela - Buenos Aires - Argentina</span>
+                        </li>
+                        <li class="flex items-center space-x-4">
+                            <i class="fas fa-envelope text-brand-gold text-2xl"></i>
+                            <span class="text-gray-700">dra.ailenramirez@gmail.com</span>
+                        </li>
+                        <li class="flex items-center space-x-4">
+                            <i class="fas fa-phone text-brand-gold text-2xl"></i>
+                            <span class="text-gray-700">1124092349</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="w-full lg:w-1/2 bg-white p-8 rounded-xl shadow-lg">
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700">Nombre</label>
+                            <input type="text" id="name" name="name" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-brand-gold focus:ring focus:ring-brand-gold focus:ring-opacity-50 transition-colors duration-300">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                            <input type="email" id="email" name="email" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-brand-gold focus:ring focus:ring-brand-gold focus:ring-opacity-50 transition-colors duration-300">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700">Mensaje</label>
+                            <textarea id="message" name="message" rows="4" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-brand-gold focus:ring focus:ring-brand-gold focus:ring-opacity-50 transition-colors duration-300"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-brand-gold text-white font-semibold py-3 px-4 rounded-md shadow-md hover:bg-amber-800 transition-colors duration-300">
+                            Enviar Mensaje
+                        </button>
+                    </form>
+                    <div id="form-message" class="mt-4 text-center"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Section -->
+        <section id="ubicacion" class="bg-gray-100 py-12 md:py-24">
+            <div class="container mx-auto px-4 md:px-6">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-brand-black mb-12">
+                    Nuestra Ubicación
+                </h2>
+                <div class="relative w-full h-96 rounded-xl overflow-hidden shadow-lg">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3278.384666671493!2d-58.27139158476144!3d-34.86906238038755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32851493c4b03%3A0xc6c4f9f697926e85!2sAv.%20Gral.%20Jos%C3%A9%20de%20San%20Mart%C3%ADn%201586%2C%20Florencio%20Varela%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1689626359281!5m2!1ses-419!2sar" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Ubicación del estudio jurídico">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-brand-black text-white py-8 text-center">
+        <div class="container mx-auto px-4 md:px-6">
+            <p>&copy; 2024 Abogada Ailen Ramirez. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for smooth scrolling and form handling -->
+    <script>
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Simple form handling (no backend)
+        const form = document.getElementById('contact-form');
+        const messageDiv = document.getElementById('form-message');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // In a real application, you would send the data to a server here.
+            // Example: fetch('/submit-form', { method: 'POST', body: new FormData(this) })
+            // For this example, we'll just show a success message.
+            
+            messageDiv.innerHTML = '<span class="text-green-600 font-semibold">¡Mensaje enviado con éxito! Nos pondremos en contacto a la brevedad.</span>';
+            form.reset();
+        });
+    </script>
+</body>
+</html>
