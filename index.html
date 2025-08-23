@@ -57,10 +57,10 @@
 
     <!-- Navigation Header -->
     <header class="fixed top-0 left-0 right-0 z-40 bg-white/90 backdrop-blur-sm shadow-md py-4 transition-all duration-300">
-        <nav class="container mx-auto px-4 md:px-6 flex items-center justify-between">
+        <nav class="container mx-auto px-4 md:px-6 flex flex-col items-center">
             <!-- Logo Section -->
-            <div class="flex items-center space-x-2">
-                <img src="logoaillen.jpg" alt="Dra. Ailen Ramirez Abogados" class="h-20 md:h-24">
+            <div class="mb-4">
+                <img src="logoaillen.jpg" alt="Logo de Ailen Ramirez Abogados" class="h-10 md:h-12">
             </div>
 
             <!-- Navigation Links -->
@@ -83,7 +83,7 @@
                 Abogada especialista en Derecho Previsional. Te acompañamos en cada paso para asegurar tus derechos.
             </p>
             <a href="#contacto" class="inline-block bg-brand-gold text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-amber-800 transition-colors duration-300 transform hover:scale-105">
-                Consultá sin cargo
+			Contacto
             </a>
         </section>
 
@@ -192,7 +192,7 @@
     <!-- Footer -->
     <footer class="bg-brand-black text-white py-8 text-center">
         <div class="container mx-auto px-4 md:px-6">
-            <p>&copy; 2024 Abogada Ailen Ramirez. Todos los derechos reservados.</p>
+            <p>&copy; <span id="current-year"></span> Abogada Ailen Ramirez. Todos los derechos reservados.</p>
         </div>
     </footer>
 
@@ -222,6 +222,9 @@
             messageDiv.innerHTML = '<span class="text-green-600 font-semibold">¡Mensaje enviado con éxito! Nos pondremos en contacto a la brevedad.</span>';
             form.reset();
         });
+
+        // Automatically update the copyright year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
 </body>
 </html>
