@@ -4,6 +4,8 @@
   --beige-logo: #D4B086;
   --dark-text: #242424;
   --gray-light: #fff4e7;
+  --gray-light0: #fff5ea;
+  
   --gray-mid: #d4b08647;
   --gray-dark: #6b7280;
   --font-serif-logo: 'Playfair Display', serif;
@@ -126,7 +128,7 @@ body {
 }
 
 .section-hero {
-  background-color: white;
+  background-color:var(--gray-light0);
   text-align: center;
 }
 
@@ -184,7 +186,7 @@ body {
 }
 
 .section-services {
-  background-color: white;
+  background-color: var(--gray-light0);
   text-align: center;
 }
 
@@ -232,7 +234,7 @@ body {
 }
 
 .section-about {
-  background-color: white;
+  background-color: var(--gray-light0);
   text-align: center;
 }
 
@@ -263,7 +265,7 @@ body {
 }
 
 .section-contact {
-  background-color: white;
+  background-color: var(--gray-light0);
 }
 
 .contact-title {
