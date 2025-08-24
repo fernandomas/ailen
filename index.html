@@ -1,400 +1,205 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Dra. Ailen Ramírez - Abogada Previsional</title>
-        <!-- Meta tags para SEO -->
-        <meta name="description"
-            content="Estudio Jurídico de la Dra. Ailen Ramírez en Florencio Varela. Especialistas en jubilaciones, pensiones, jubilación por invalidez y reajustes de haberes ante ANSES e IPS.">
-        <meta name="keywords"
-            content="abogada previsional, jubilaciones, pensiones, reajustes haberes, jubilación invalidez, ANSES, IPS, Ailen Ramírez, Florencio Varela, Buenos Aires">
-        <meta name="author" content="Ailen Ramírez">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dra. Ailen Ramírez - Abogada Previsional</title>
 
-        <!-- Enlace a Google Fonts para la tipografía Playfair Display y Inter -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap"
-            rel="stylesheet">
+    <meta name="description"
+        content="Estudio Jurídico de la Dra. Ailen Ramírez en Florencio Varela. Especialistas en jubilaciones, pensiones, jubilación por invalidez y reajustes de haberes ante ANSES e IPS.">
+    <meta name="keywords"
+        content="abogada previsional, jubilaciones, pensiones, reajustes haberes, jubilación invalidez, ANSES, IPS, Ailen Ramírez, Florencio Varela, Buenos Aires">
+    <meta name="author" content="Ailen Ramírez">
 
-        <!-- Enlace a Tailwind CSS CDN -->
-        <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
-        <!-- Configuración de Tailwind CSS con paleta de colores personalizada -->
-        <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'beige-logo': '#D4B086',
-                        'dark-text': '#242424',
-                        'bg-gray-50': '#',
-                    },
-                    fontFamily: {
-                        'serif-logo': ['"Playfair Display"', 'serif'],
-                        'sans-text': ['"Inter"', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-        <!-- Enlace a Font Awesome para los iconos -->
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-        <style>
-        html {
-            scroll-behavior: smooth; /* Habilita el desplazamiento suave */
-        }
-        body {
-            font-family: 'Inter', sans-serif;
-            color: #242424;
-            background-color: #f8f8f8;
-        }
-        .header-sticky {
-            position: sticky;
-            top: 0;
-            z-index: 50;
-        }
-        /* Estilos para el efecto hover en los enlaces del menú */
-        .nav-link:hover {
-            color: #242424; /* El color de hover ahora es el texto oscuro para contraste */
-            transition: color 0.3s;
-        }
-        /* Estilo para el botón de WhatsApp flotante */
-        .whatsapp-float {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 100;
-            background-color: #25d366;
-            color: white;
-            padding: 1rem;
-            border-radius: 50%;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease-in-out;
-        }
-        .whatsapp-float:hover {
-            transform: scale(1.1);
-        }
-        /* Estilo para el formulario de contacto */
-        input:focus, textarea:focus {
-            outline: none;
-            box-shadow: 0 0 0 2px rgba(212, 176, 134, 0.5);
-        }
+    <a href="https://wa.me/5491124092349" class="whatsapp-float flex-center"
+        target="_blank" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
 
-    </style>
-    </head>
-    <body class="font-sans-text">
-
-        <!-- Botón flotante de WhatsApp -->
-        <a href="https://wa.me/5491124092349"
-            class="whatsapp-float flex items-center justify-center"
-            target="_blank" aria-label="Contactar por WhatsApp">
-            <i class="fab fa-whatsapp text-2xl"></i>
-        </a>
-
-        <!-- Encabezado y Menú de Navegación -->
-        <header class="header-sticky bg-beige-logo shadow-sm">
-            <nav
-                class="container mx-auto px-4 py-4 flex justify-between items-center">
-                <!-- Logo y nombre del estudio -->
-                <a href="#inicio" class="flex items-center space-x-2">
-                    <img src="logoaillen.jpg" Ailen Ramírez Abogados Logo"
-                        class="h-16  w-auto rounded-lg shadow-md">
-                    <div class="hidden sm:block">
-                        <span
-                            class="font-sans-text  text-xl font-bold text-dark-text">A
-                            & R</span>
-                        <br>
-                        <span
-                            class="font-sans-text text-xs font-light tracking-wide text-dark-text">ABOGADOS</span>
-                    </div>
-                </a>
-
-                <!-- Menú de navegación (oculto en móviles) -->
-                <div id="nav-menu"
-                    class="hidden sm:flex sm:space-x-8 lg:space-x-12">
-                    <a href="#inicio"
-                        class="nav-link text-white font-semibold hover:text-dark-text">Inicio</a>
-                    <a href="#servicios"
-                        class="nav-link text-white font-semibold hover:text-dark-text">Servicios</a>
-                    <a href="#nosotros"
-                        class="nav-link text-white font-semibold hover:text-dark-text">Sobre
-                        Nosotros</a>
-                    <a href="#contacto"
-                        class="nav-link text-white font-semibold hover:text-dark-text">Contacto</a>
+    <header class="header">
+        <nav class="container header-nav">
+            <a href="#inicio" class="logo-container">
+                <img src="logoaillen.jpg" alt="Ailen Ramírez Abogados Logo" class="logo-image">
+                <div class="logo-text-container">
+                    <span class="logo-main-text">A & R</span>
+                    <br>
+                    <span class="logo-sub-text">ABOGADOS</span>
                 </div>
+            </a>
 
-                <!-- Botón de menú hamburguesa para móviles -->
-                <button id="menu-toggle"
-                    class="sm:hidden text-white focus:outline-none">
-                    <svg class="h-6 w-6" fill="none" stroke="currentColor"
-                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                    </svg>
-                </button>
-            </nav>
-
-            <!-- Menú desplegable para móviles -->
-            <div id="mobile-menu"
-                class="hidden sm:hidden bg-beige-logo shadow-md">
-                <a href="#inicio"
-                    class="block py-3 px-4 text-white font-semibold border-t border-gray-200">Inicio</a>
-                <a href="#servicios"
-                    class="block py-3 px-4 text-white font-semibold border-t border-gray-200">Servicios</a>
-                <a href="#nosotros"
-                    class="block py-3 px-4 text-white font-semibold border-t border-gray-200">Sobre
-                    Nosotros</a>
-                <a href="#contacto"
-                    class="block py-3 px-4 text-white font-semibold border-t border-gray-200">Contacto</a>
+            <div id="nav-menu" class="menu-desktop">
+                <a href="#inicio" class="nav-link">Inicio</a>
+                <a href="#servicios" class="nav-link">Servicios</a>
+                <a href="#nosotros" class="nav-link">Sobre Nosotros</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
             </div>
-        </header>
 
+            <button id="menu-toggle" class="menu-toggle">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </nav>
 
-        <!-- Sección Sobre Nosotros -->
-        <section id="inicio" class="py-20 bg-white">
-            <div class="container mx-auto px-4 text-center">
-                    <div
-                        class="bg-gray-50 rounded-lg p-8 shadow-md hover:shadow-xl transition-shadow duration-300">
-                    <h1
-                        class="font-sans-text text-4xl md:text-6xl font-bold text-dark-text leading-tight">
-                        A & R Abogados Previsionales
-                    </h1>
-                    <h2
-                        class="mt-4 font-sans-text text-xl md:text-2xl text-dark-text">
-                        Especialistas en Jubilaciones y Pensiones en Argentina
-                    </h2>
-                    <p class="mt-6 text-lg text-gray-600 max-w-2xl mx-auto">
-                        Tu futuro y tus derechos previsionales, nuestra
-                        prioridad.
-                        Te acompañamos en cada paso del proceso.
+        <div id="mobile-menu" class="menu-mobile">
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#nosotros">Sobre Nosotros</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+    </header>
+
+    <section id="inicio" class="section section-hero">
+        <div class="container text-center">
+            <div class="hero-card">
+                <h1 class="hero-title">A & R Abogados Previsionales</h1>
+                <h2 class="hero-subtitle">Especialistas en Jubilaciones y Pensiones en Argentina</h2>
+                <p class="hero-text">
+                    Tu futuro y tus derechos previsionales, nuestra prioridad. Te acompañamos en cada paso del proceso.
+                </p>
+                <a href="#contacto" class="hero-button">Consultar Ahora</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="section section-services">
+        <div class="container text-center">
+            <h2 class="services-title">Nuestros Servicios</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3 class="service-title">Jubilaciones y Pensiones</h3>
+                    <p class="service-text">
+                        Te asesoramos y gestionamos todo el trámite para que obtengas tu jubilación o pensión de manera
+                        rápida y segura.
                     </p>
-                    <a href="#contacto"
-                        class="mt-8 inline-block bg-beige-logo text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-opacity-80 transition-all">
-                        Consultar Ahora
-                    </a>
                 </div>
-            </div>
-        </section>
-        <!-- Sección de inicio (Hero) -->
-        <!-- <section id="Xinicio" class="py-20 bg-white">
-            <div class="grid md:grid-cols-3 gap-8">
-                <div
-                    class="bg-gray-50 rounded-lg p-8 shadow-md hover:shadow-xl transition-shadow duration-300">
-
-                    <h1
-                        class="font-serif-logo text-4xl md:text-6xl font-bold text-dark-text leading-tight">
-                        A & R Abogados Previsionales
-                    </h1>
-                    <h2
-                        class="mt-4 font-sans-text text-xl md:text-2xl text-dark-text">
-                        Especialistas en Jubilaciones y Pensiones en Argentina
-                    </h2>
-                    <p class="mt-6 text-lg text-gray-600 max-w-2xl mx-auto">
-                        Tu futuro y tus derechos previsionales, nuestra
-                        prioridad.
-                        Te acompañamos en cada paso del proceso.
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-wheelchair"></i>
+                    </div>
+                    <h3 class="service-title">Jubilación por Invalidez</h3>
+                    <p class="service-text">
+                        Defendemos tus derechos para acceder a una jubilación por invalidez. Te acompañamos en el
+                        proceso de evaluación y presentación de documentos.
                     </p>
-                    <a href="#contacto"
-                        class="mt-8 inline-block bg-beige-logo text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-opacity-80 transition-all">
-                        Consultar Ahora
-                    </a>
                 </div>
-            </div>
-        </section>
- -->
-        <!-- Sección de Servicios -->
-        <section id="servicios" class="py-20 bg-white">
-            <div class="container mx-auto px-4 text-center">
-                <h2
-                    class="font-serif-logo text-3xl md:text-4xl font-bold text-dark-text mb-12">Nuestros
-                    Servicios</h2>
-                <div class="grid md:grid-cols-3 gap-8">
-                    <!-- Servicio: Jubilaciones y Pensiones -->
-                    <div
-                        class="bg-gray-50 rounded-lg p-8 shadow-md hover:shadow-xl transition-shadow duration-300">
-                        <div class="text-beige-logo mb-4 text-4xl">
-                            <i class="fas fa-hand-holding-usd"></i>
-                        </div>
-                        <h3
-                            class="font-serif-logo text-2xl font-semibold mb-2 text-dark-text">Jubilaciones
-                            y Pensiones</h3>
-                        <p class="text-gray-600">
-                            Te asesoramos y gestionamos todo el trámite para que
-                            obtengas tu jubilación o pensión de manera rápida y
-                            segura.
-                        </p>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
                     </div>
-                    <!-- Servicio: Jubilación por Invalidez -->
-                    <div
-                        class="bg-gray-50 rounded-lg p-8 shadow-md hover:shadow-xl transition-shadow duration-300">
-                        <div class="text-beige-logo mb-4 text-4xl">
-                            <i class="fas fa-wheelchair"></i>
-                        </div>
-                        <h3
-                            class="font-serif-logo text-2xl font-semibold mb-2 text-dark-text">Jubilación
-                            por Invalidez</h3>
-                        <p class="text-gray-600">
-                            Defendemos tus derechos para acceder a una
-                            jubilación por invalidez. Te acompañamos en el
-                            proceso de evaluación y presentación de documentos.
-                        </p>
-                    </div>
-                    <!-- Servicio: Reajustes de Haberes -->
-                    <div
-                        class="bg-gray-50 rounded-lg p-8 shadow-md hover:shadow-xl transition-shadow duration-300">
-                        <div class="text-beige-logo mb-4 text-4xl">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                        <h3
-                            class="font-serif-logo text-2xl font-semibold mb-2 text-dark-text">Reajustes
-                            de Haberes</h3>
-                        <p class="text-gray-600">
-                            Calculamos y reclamamos el reajuste de tus haberes
-                            previsionales ante ANSES e IPS para que recibas lo
-                            que te corresponde por ley.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Sección Sobre Nosotros -->
-        <section id="nosotros" class="py-20 bg-white">
-            <div class="container mx-auto px-4 text-center">
-                <h2
-                    class="font-serif-logo text-3xl md:text-4xl font-bold text-dark-text mb-12">Dra.
-                    Ailen Ramírez</h2>
-
-                <div
-                    class="bg-gray-50 rounded-lg p-8 shadow-md hover:shadow-xl transition-shadow duration-300">
-                    <p class="text-lg text-gray-600 leading-relaxed">
-                        La Dra. Ailen Ramírez, especialista en derecho
-                        previsional,
-                        fundó este estudio con el compromiso de ofrecer un
-                        servicio
-                        cercano y eficiente. Nuestra misión es garantizar que
-                        tus
-                        derechos sean respetados, brindando un acompañamiento
-                        personalizado en cada etapa del proceso, ya sea en
-                        jubilaciones, pensiones o reajustes de haberes.
+                    <h3 class="service-title">Reajustes de Haberes</h3>
+                    <p class="service-text">
+                        Calculamos y reclamamos el reajuste de tus haberes previsionales ante ANSES e IPS para que
+                        recibas lo que te corresponde por ley.
                     </p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Sección de Contacto -->
-        <section id="contacto" class="py-20 bg-white">
-            <div class="container mx-auto px-4">
-                <h2
-                    class="font-serif-logo text-3xl md:text-4xl font-bold text-dark-text mb-12 text-center">Contacto</h2>
-                <div class="flex flex-wrap lg:flex-nowrap gap-10">
-                    <!-- Información de contacto -->
-                    <div
-                        class="w-full lg:w-1/2 p-6 bg-gray-50 rounded-lg shadow-md">
-                        <h3
-                            class="font-serif-logo text-2xl font-semibold mb-4 text-dark-text">Nuestra
-                            Oficina</h3>
-                        <div class="space-y-4 text-gray-600">
-                            <p class="flex items-center space-x-3">
-                                <i
-                                    class="fas fa-map-marker-alt text-lg text-beige-logo"></i>
-                                <span>Avenida General José de San Martin 1586,
-                                    Florencio Varela - Buenos Aires -
-                                    Argentina</span>
-                            </p>
-                            <p class="flex items-center space-x-3">
-                                <i
-                                    class="fas fa-phone-alt text-lg text-beige-logo"></i>
-                                <span>Teléfono: 1124092349</span>
-                            </p>
-                            <p class="flex items-center space-x-3">
-                                <i
-                                    class="fas fa-envelope text-lg text-beige-logo"></i>
-                                <span>Email: dra.ailenramirez@gmail.com</span>
-                            </p>
-                        </div>
+    <section id="nosotros" class="section section-about">
+        <div class="container text-center">
+            <h2 class="about-title">Dra. Ailen Ramírez</h2>
+            <div class="about-card">
+                <p class="about-text">
+                    La Dra. Ailen Ramírez, especialista en derecho previsional, fundó este estudio con el compromiso de
+                    ofrecer un servicio cercano y eficiente. Nuestra misión es garantizar que tus derechos sean
+                    respetados, brindando un acompañamiento personalizado en cada etapa del proceso, ya sea en
+                    jubilaciones, pensiones o reajustes de haberes.
+                </p>
+            </div>
+        </div>
+    </section>
 
-                        <!-- Mapa de Google Maps -->
-                        <div class="mt-8 rounded-lg overflow-hidden shadow-lg">
-                            <iframe
-                                class="w-full h-80"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3278.47195450893!2d-58.26767692484799!3d-34.82195046830743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32865d496e579%3A0x6b5e022513f17a94!2sAv.%20Gral.%20Jos%C3%A9%20de%20San%20Mart%C3%ADn%201586%2C%20Florencio%20Varela%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1689694295801!5m2!1ses-419!2sar"
-                                allowfullscreen
-                                loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade">
-                            </iframe>
-                        </div>
-                    </div>
-
-                    <!-- Formulario de Contacto -->
-                    <div
-                        class="w-full lg:w-1/2 p-6 bg-gray-50 rounded-lg shadow-md">
-                        <h3
-                            class="font-serif-logo text-2xl font-semibold mb-4 text-dark-text">Envíanos
-                            un Mensaje</h3>
-                        <form action="mailto:dra.ailenramirez@gmail.com"
-                            method="post" enctype="text/plain"
-                            class="space-y-4">
-                            <div>
-                                <label for="nombre"
-                                    class="sr-only">Nombre</label>
-                                <input type="text" id="nombre" name="nombre"
-                                    placeholder="Tu Nombre" required
-                                    class="w-full p-3 rounded-lg border border-gray-300">
-                            </div>
-                            <div>
-                                <label for="telefono"
-                                    class="sr-only">Teléfono</label>
-                                <input type="tel" id="telefono" name="telefono"
-                                    placeholder="Tu Teléfono"
-                                    class="w-full p-3 rounded-lg border border-gray-300">
-                            </div>
-                            <div>
-                                <label for="email" class="sr-only">Email</label>
-                                <input type="email" id="email" name="email"
-                                    placeholder="Tu Email" required
-                                    class="w-full p-3 rounded-lg border border-gray-300">
-                            </div>
-                            <div>
-                                <label for="mensaje"
-                                    class="sr-only">Mensaje</label>
-                                <textarea id="mensaje" name="mensaje" rows="4"
-                                    placeholder="Tu Mensaje" required
-                                    class="w-full p-3 rounded-lg border border-gray-300"></textarea>
-                            </div>
-                            <button type="submit"
-                                class="w-full bg-beige-logo text-white font-semibold py-3 px-6 rounded-full shadow-lg hover:bg-opacity-80 transition-colors">
-                                Enviar Consulta
-                            </button>
-                        </form>
-                        <p class="mt-4 text-sm text-gray-500 text-center">
-                            El formulario de contacto te abrirá tu cliente de
-                            correo para enviar el mensaje.
+    <section id="contacto" class="section section-contact">
+        <div class="container">
+            <h2 class="contact-title">Contacto</h2>
+            <div class="contact-flex-container">
+                <div class="contact-info-card">
+                    <h3 class="contact-card-title">Nuestra Oficina</h3>
+                    <div class="contact-details">
+                        <p class="contact-detail-item">
+                            <i class="fas fa-map-marker-alt contact-icon"></i>
+                            <span>Avenida General José de San Martin 1586, Florencio Varela - Buenos Aires - Argentina</span>
+                        </p>
+                        <p class="contact-detail-item">
+                            <i class="fas fa-phone-alt contact-icon"></i>
+                            <span>Teléfono: 1124092349</span>
+                        </p>
+                        <p class="contact-detail-item">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <span>Email: dra.ailenramirez@gmail.com</span>
                         </p>
                     </div>
+
+                    <div class="contact-map-container">
+                        <iframe
+                            class="contact-map-iframe"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3278.47195450893!2d-58.26767692484799!3d-34.82195046830743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32865d496e579%3A0x6b5e022513f17a94!2sAv.%20Gral.%20Jos%C3%A9%20de%20San%20Mart%C3%ADn%201586%2C%20Florencio%20Varela%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1689694295801!5m2!1ses-419!2sar"
+                            allowfullscreen
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+
+                <div class="contact-form-card">
+                    <h3 class="contact-card-title">Envíanos un Mensaje</h3>
+                    <form action="mailto:dra.ailenramirez@gmail.com" method="post" enctype="text/plain" class="contact-form">
+                        <div>
+                            <label for="nombre" class="sr-only">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre" required class="contact-input">
+                        </div>
+                        <div>
+                            <label for="telefono" class="sr-only">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="Tu Teléfono" class="contact-input">
+                        </div>
+                        <div>
+                            <label for="email" class="sr-only">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Tu Email" required class="contact-input">
+                        </div>
+                        <div>
+                            <label for="mensaje" class="sr-only">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Tu Mensaje" required class="contact-input"></textarea>
+                        </div>
+                        <button type="submit" class="contact-button">Enviar Consulta</button>
+                    </form>
+                    <p class="form-info-text">
+                        El formulario de contacto te abrirá tu cliente de correo para enviar el mensaje.
+                    </p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Pie de página (Footer) -->
-        <footer class="bg-beige-logo   text-white py-8">
-            <div class="container mx-auto px-4 text-center text-sm">
-                <p>&copy; <span id="current-year"></span> Dra. Ailen Ramírez.
-                    Todos los derechos reservados.</p>
-                <p class="mt-2">Diseñado y desarrollado por A & R Abogados.</p>
-            </div>
-        </footer>
+    <footer class="footer">
+        <div class="container footer-text">
+            <p>© <span id="current-year"></span> Dra. Ailen Ramírez. Todos los derechos reservados.</p>
+            <p class="mt-2">Diseñado y desarrollado por A & R Abogados.</p>
+        </div>
+    </footer>
 
-        <!-- Script para el menú hamburguesa y año actual -->
-        <script>
+    <script>
         // Carga el año actual en el copyright
         document.getElementById('current-year').textContent = new Date().getFullYear();
-        
+
         const menuToggle = document.getElementById('menu-toggle');
         const mobileMenu = document.getElementById('mobile-menu');
 
@@ -409,5 +214,6 @@
             });
         });
     </script>
-    </body>
+
+</body>
 </html>
