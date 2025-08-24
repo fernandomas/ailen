@@ -22,9 +22,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <a href="https://wa.me/5491124092349" class="whatsapp-float flex-center"
-        target="_blank" aria-label="Contactar por WhatsApp">
+    <a href="https://wa.me/5491124092349" class="whatsapp-float flex-center" target="_blank" aria-label="Contactar por WhatsApp">
         <i class="fab fa-whatsapp text-2xl"></i>
     </a>
 
@@ -49,8 +47,7 @@
             <button id="menu-toggle" class="menu-toggle">
                 <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M4 6h16M4 12h16m-7 6h7"></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                 </svg>
             </button>
         </nav>
@@ -204,16 +201,15 @@
         const mobileMenu = document.getElementById('mobile-menu');
 
         menuToggle.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('is-open');
         });
 
         // Cierra el menú móvil al hacer clic en un enlace
         document.querySelectorAll('#mobile-menu a').forEach(link => {
             link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
+                mobileMenu.classList.remove('is-open');
             });
         });
     </script>
-
 </body>
 </html>

@@ -100,10 +100,12 @@ body {
 
 .menu-toggle {
   display: block;
-  color: white;
+  /* color: white; */
   border: none;
   background: transparent;
   cursor: pointer;
+  padding: 0.5rem; 
+border-radius: 0.25rem; 
 }
 
 .menu-mobile {
@@ -121,6 +123,18 @@ body {
   text-decoration: none;
 }
 
+.menu-toggle svg {
+fill: var(--dark-text); /* Aseguramos que las líneas sean oscuras */
+}
+
+/* * Estilo para el botón de hamburguesa cuando el header tiene su color de fondo / */
+.header .menu-toggle {
+background-color: rgba(0, 0, 0, 0.1); /* Un fondo ligeramente oscuro */
+}
+
+.header .menu-toggle svg {
+stroke: white; /* Las líneas del icono serán blancas para contrastar con el fondo del header */
+}
 /* Estilos de secciones */
 .section {
   padding-top: 5rem;
@@ -479,3 +493,45 @@ body {
 .whatsapp-float:hover {
   transform: scale(1.1);
 }
+
+/* ... (El resto de tu CSS anterior) ... */
+
+/* Media Queries para responsividad */
+@media (min-width: 640px) { /* sm breakpoint */
+    .logo-text-container {
+        display: block;
+    }
+    .menu-desktop {
+        display: flex;
+        gap: 2rem;
+    }
+    .menu-toggle {
+        display: none;
+    }
+    .contact-flex-container {
+        gap: 2.5rem;
+    }
+}
+
+/* Modificamos el menú móvil para que esté oculto por defecto */
+.menu-mobile {
+    display: none;
+    background-color: var(--beige-logo);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+
+/* El menú se muestra solo cuando la clase 'is-open' está presente */
+.menu-mobile.is-open {
+    display: block;
+}
+
+.menu-mobile a {
+    display: block;
+    padding: 0.75rem 1rem;
+    color: white;
+    font-weight: 600;
+    border-top: 1px solid #e5e7eb;
+    text-decoration: none;
+}
+
+/* ... (El resto de tu CSS anterior) ... */
